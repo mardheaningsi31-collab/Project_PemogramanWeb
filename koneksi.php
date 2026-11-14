@@ -1,9 +1,14 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "edupractice");
+
+$conn = mysqli_connect(
+    "localhost",
+    "root",
+    "",
+    "edupractice"
+);
 
 if (!$conn) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }
 
-echo "Koneksi berhasil";
 ?>
